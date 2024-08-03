@@ -34,7 +34,7 @@
                                         <li><a href="shop-list.html">Shop List</a></li>
                                         <li><a href="shop-details.html">Shop Details</a></li>
                                         <li><a href="{% url 'mycart'  %}">MYCart</a></li>
-                                        <li><a href="checkout.html">Check Out</a></li>
+                                        
                                         <li><a href="wishlist.html">Wishlist</a></li>
                                         <li><a href="{% url 'login' %}">Login & Register</a></li>
                                     </ul>
@@ -42,50 +42,35 @@
                                 <li class="menu-item-has-children">
                                     <a href="blog.html">Blog</a>
                                     <ul class="sub-menu">
-                                        <li><a href="blog.html">Blog</a></li>
+                                        
                                         <li><a href="blog-list.html">Blog List</a></li>
-                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                        <li><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
-                                        <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                        
                                         <li><a href="blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
+                                
 
                                 <li class="mega-menu-wrap menu-item-has-children">
                                     <a href="#">All</a>
                                     <ul class="mega-menu">
                                         
-                                        <li><a href="#">About</a>
-                                            <ul>
-                                                <li><a href="index-8.html">Home Style 8</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="service.html">Services</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="faq.html">FAQ Page</a></li>
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                            </ul>
-                                        </li>
+                                        
                                         <li><a href="#">Blog</a>
                                             <ul>
-                                                <li><a href="blog.html">Blog</a></li>
+                                                
                                                 <li><a href="blog-list.html">Blog List</a></li>
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
-                                                <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                                
                                                 <li><a href="blog-details.html">Blog Details</a></li>
-                                                <li><a href="error.html">Error Page</a></li>
+                                                
                                             </ul>
                                         </li>
                                         <li><a href="#">Shop</a>
                                             <ul>
-                                                <li><a href="shop.html">Shop</a></li>
+                                                
                                                 <li><a href="shop-list.html">Shop List</a></li>
                                                 <li><a href="shop-details.html">Shop Details</a></li>
-                                                <li><a href="cart.html">Shopping Cart</a></li>
-                                                <li><a href="checkout.html">Check Out</a></li>
+                                                
+                                                
                                                 <li><a href="wishlist.html">Wishlist</a></li>
                                                 <li><a href="{% url 'login' %}">Login & Register</a></li>
                                             </ul>
@@ -123,11 +108,8 @@
 
             {% for banner in  banners %}
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2;">
-                <p style="top:405px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Organic Plants and</p>
-                <div style="top:611px; left:375px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
-
-                    <a href="shop.html" class="vs-btn style5 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
-                </div>
+                <p style="top:405px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Biz bilan qulay</p>
+                
 
                 <img width="658" height="543" src="{{ banner.img.url }}" class="ls-l ls-hide-deskto" alt="image" style="top: 180px; left:916px; background-size:inherit; background-position:inherit; width:800px; height:600px;">
 
@@ -257,7 +239,7 @@
         <div class="container">
             <div class="section-title text-center">
                 <div class="sec-icon"><img src="{% static 'assets/img/icons/sec-icon-2.png' %}" alt="icon"></div>
-                <span class="sub-title4">Box contents change weekly</span>
+                
                 <h2 class="sec-title3">Our Most Popular Boxes</h2>
             </div>
             <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="3" data-sm-slide-show="1">
@@ -288,109 +270,9 @@
     </section>
 
 
-    <section class="  space" data-bg-src="{% static 'assets/img/bg/newsletter-bg-1-2.jpg' %}">
-        <div class="container">
-            <div class="newsletter-style2" data-bg-src="{% static 'assets/img/shape/newsletter-bg-1-1.png' %}">
-                <div class="shape-1 d-none d-md-block"><img src="{% static 'assets/img/shape/newsletter-s-008.png' %}" alt="shape"></div>
-                <span class="sub-title4">Subscribe and Get new Tips and Updates</span>
-                <h2 class="sec-title3">Subscribe & Get 10% Off</h2>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Your Email Address....">
-                    <button class="vs-btn style4" type="submit"><i class="fas fa-envelope"></i>Subscribe</button>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     
     
-    <section class="vs-blog-wrapper space-top space-md-bottom" style="padding: 40px;">
-        <div class="container">
-            <div class="section-title text-center">
-                <div class="sec-icon"><img src="{% static 'assets/img/icons/sec-icon-2.png' %}" alt="icon"></div>
-                <span class="sub-title4">Tips & News</span>
-                <h2 class="sec-title3">Recent Articles</h2>
-            </div>
-            <div class="row vs-carousel" data-slide-show="3" data-sm-slide-show="1">
-                <div class="col-xl-4">
-                    <div class="vs-blog blog-style1">
-                        <div class="blog-img image-scale-hover">
-                            <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog-4-1.jpg' %}" alt="Blog Image" class="w-100"></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="tags">
-                                <a href="blog-details.html">Organic</a>
-                            </div>
-                            <a href="blog-details.html" class="blog-date">Dec 22,2022</a>
-                            <h3 class="blog-title"><a href="blog-details.html">From its medieval origins to the digital </a></h3>
-                            <p class="blog-text">Nvidunt ut labore et dolore magna aliqu accusam et justo duo dolores et ea rebu Lorem ipsum dolor sit ametrit.</p>
-                        </div>
-                        <div class="meta-box">
-                            <a href="blog-details.html">Posted By Admin</a>
-                            <a href="blog-details.html">5 Comments</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-blog blog-style1">
-                        <div class="blog-img image-scale-hover">
-                            <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog-4-2.jpg' %}" alt="Blog Image" class="w-100"></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="tags">
-                                <a href="blog-details.html">Popular</a>
-                            </div>
-                            <a href="blog-details.html" class="blog-date">Dec 18,2022</a>
-                            <h3 class="blog-title"><a href="blog-details.html">Latin derived from Cicero's 1st-century</a></h3>
-                            <p class="blog-text">Nvidunt ut labore et dolore magna aliqu accusam et justo duo dolores et ea rebu Lorem ipsum dolor sit ametrit.</p>
-                        </div>
-                        <div class="meta-box">
-                            <a href="blog-details.html">Posted By Ripon</a>
-                            <a href="blog-details.html">3 Comments</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-blog blog-style1">
-                        <div class="blog-img image-scale-hover">
-                            <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog-4-3.jpg' %}" alt="Blog Image" class="w-100"></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="tags">
-                                <a href="blog-details.html">Fresh</a>
-                            </div>
-                            <a href="blog-details.html" class="blog-date">Jan 21,2022</a>
-                            <h3 class="blog-title"><a href="blog-details.html">Creation timelines for the standard lorem</a></h3>
-                            <p class="blog-text">Nvidunt ut labore et dolore magna aliqu accusam et justo duo dolores et ea rebu Lorem ipsum dolor sit ametrit.</p>
-                        </div>
-                        <div class="meta-box">
-                            <a href="blog-details.html">Posted By Admin</a>
-                            <a href="blog-details.html">9 Comments</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-blog blog-style1">
-                        <div class="blog-img image-scale-hover">
-                            <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog-4-4.jpg' %}" alt="Blog Image" class="w-100"></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="tags">
-                                <a href="blog-details.html">Natural</a>
-                            </div>
-                            <a href="blog-details.html" class="blog-date">Mar 1,2022</a>
-                            <h3 class="blog-title"><a href="blog-details.html">Lorem ipsum was purposefully designed</a></h3>
-                            <p class="blog-text">Nvidunt ut labore et dolore magna aliqu accusam et justo duo dolores et ea rebu Lorem ipsum dolor sit ametrit.</p>
-                        </div>
-                        <div class="meta-box">
-                            <a href="blog-details.html">Posted By Admin</a>
-                            <a href="blog-details.html">3 Comments</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     
     <footer class="footer-wrapper footer-layout2" data-bg-src="{% static 'assets/img/shape/footer-5-1.jpg' %}" style="padding-top: 10px;">
         <div class="container">
@@ -432,42 +314,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">Instagram Photos</h3>
-                            <div class="sidebar-gallery">
-                                <div class="gallery-thumb">
-                                    <a class="popup-image" href="{% static 'assets/img/gallery/gal-2-1.jpg' %}"><img src="{% static 'assets/img/gallery/gal-2-1.jpg' %}" alt="Gallery Image" class="w-100"></a>
-                                </div>
-                                <div class="gallery-thumb">
-                                    <a class="popup-image" href="{% static 'assets/img/gallery/gal-2-2.jpg' %}"><img src="{% static 'assets/img/gallery/gal-2-2.jpg' %}" alt="Gallery Image" class="w-100"></a>
-                                </div>
-                                <div class="gallery-thumb">
-                                    <a class="popup-image" href="{% static 'assets/img/gallery/gal-2-3.jpg' %}"><img src="{% static 'assets/img/gallery/gal-2-3.jpg' %}" alt="Gallery Image" class="w-100"></a>
-                                </div>
-                                <div class="gallery-thumb">
-                                    <a class="popup-image" href="{% static 'assets/img/gallery/gal-2-4.jpg' %}"><img src="{% static 'assets/img/gallery/gal-2-4.jpg' %}" alt="Gallery Image" class="w-100"></a>
-                                </div>
-                                <div class="gallery-thumb">
-                                    <a class="popup-image" href="{% static 'assets/img/gallery/gal-2-5.jpg' %}"><img src="{% static 'assets/img/gallery/gal-2-5.jpg' %}" alt="Gallery Image" class="w-100"></a>
-                                </div>
-                                <div class="gallery-thumb">
-                                    <a class="popup-image" href="{% static 'assets/img/gallery/gal-2-6.jpg' %}"><img src="{% static 'assets/img/gallery/gal-2-6.jpg' %}" alt="Gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
+        
         <div class="copyright-area" data-bg-src="{% static 'assets/img/shape/footer-5-2.png' %}">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-auto text-center text-lg-start">
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email address" required>
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
                         <div class="copyright">
                             <p class="mb-0 link-inherit">Copyright &copy; 2022 <a href="index.html">Foodano</a> - All Rights Reserved by <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
                         </div>
                     </div>
+                    
                     <div class="col-auto d-none d-lg-block">
                         <div class="copyright-social">
                             <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
@@ -479,4 +347,8 @@
             </div>
         </div>
     </footer>
+    
+
+    
+   
 {% endblock %}

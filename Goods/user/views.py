@@ -60,7 +60,7 @@ def deleteProductCart(request, id):
 
 
 def CreateOrder(request, id):
-    print('boshi')
+    
     cart = models.Cart.objects.get(id=id)
     
     cart_products = models.CartProduct.objects.filter(cart=cart)

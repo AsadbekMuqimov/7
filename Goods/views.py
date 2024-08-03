@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from . import models
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.contrib.auth.decorators import login_required
+
 
 
 
@@ -32,3 +34,8 @@ def main(request):
 
 def user(request):
     return render(request, 'user/detail.html')
+
+
+
+
+
